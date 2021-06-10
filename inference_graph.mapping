@@ -1,0 +1,515 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="pixel_cls/score_from_conv5_3/weights/read" out_port_id="0"/>
+		<IR id="94" name="pixel_cls/score_from_conv5_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_2/Relu" out_port_id="0"/>
+		<IR id="26" name="test/conv1/conv1_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/ResizeBilinear" out_port_id="0"/>
+		<IR id="10" name="test/ssd_preprocessing_train/resize_image/ResizeBilinear/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_2/Relu" out_port_id="0"/>
+		<IR id="48" name="test/conv3/conv3_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/strided_slice_1" out_port_id="0"/>
+		<IR id="151" name="test/pixel_link/ResizeBilinear_1/Cast_15008_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/size" out_port_id="0"/>
+		<IR id="7" name="test/ssd_preprocessing_train/resize_image/ResizeBilinear/Cast_15026_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3/conv3_1/weights/read" out_port_id="0"/>
+		<IR id="39" name="conv3/conv3_1/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fc7/weights/read" out_port_id="0"/>
+		<IR id="104" name="fc7/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_fc7/convolution" out_port_id="0"/>
+		<IR id="110" name="test/pixel_cls/score_from_fc7/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pool2/MaxPool" out_port_id="0"/>
+		<IR id="38" name="test/pool2/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/strided_slice_1" out_port_id="0"/>
+		<IR id="116" name="test/pixel_cls/ResizeBilinear_1/Cast_15034_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pool1/MaxPool" out_port_id="0"/>
+		<IR id="27" name="test/pool1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/Reshape_6" out_port_id="0"/>
+		<IR id="167" name="test/Reshape_6/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4/conv4_2/weights/read" out_port_id="0"/>
+		<IR id="64" name="conv4/conv4_2/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_3/convolution" out_port_id="0"/>
+		<IR id="90" name="test/conv5/conv5_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/Reshape_5" out_port_id="0"/>
+		<IR id="162" name="test/Reshape_5" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/ResizeBilinear_1" out_port_id="0"/>
+		<IR id="152" name="test/pixel_link/ResizeBilinear_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_2/BiasAdd" out_port_id="0"/>
+		<IR id="25" name="test/conv1/conv1_2/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_1/BiasAdd" out_port_id="0"/>
+		<IR id="62" name="test/conv4/conv4_1/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/Reshape" out_port_id="0"/>
+		<IR id="12" name="test/ssd_preprocessing_train/resize_image/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_2/convolution" out_port_id="0"/>
+		<IR id="65" name="test/conv4/conv4_2/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv3_3/BiasAdd" out_port_id="0"/>
+		<IR id="57" name="test/pixel_cls/score_from_conv3_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv4_3/convolution" out_port_id="0"/>
+		<IR id="75" name="test/pixel_cls/score_from_conv4_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv5_3/convolution" out_port_id="0"/>
+		<IR id="141" name="test/pixel_link/score_from_conv5_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="pixel_cls/score_from_fc7/weights/read" out_port_id="0"/>
+		<IR id="109" name="pixel_cls/score_from_fc7/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/fc6/Relu" out_port_id="0"/>
+		<IR id="103" name="test/fc6/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv5_3/BiasAdd" out_port_id="0"/>
+		<IR id="143" name="test/pixel_link/score_from_conv5_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_2/BiasAdd" out_port_id="0"/>
+		<IR id="67" name="test/conv4/conv4_2/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/add_1" out_port_id="0"/>
+		<IR id="118" name="test/pixel_cls/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/fc6/convolution/BatchToSpaceND" out_port_id="0"/>
+		<IR id="100" name="test/fc6/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv5_3/convolution" out_port_id="0"/>
+		<IR id="95" name="test/pixel_cls/score_from_conv5_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_2/convolution" out_port_id="0"/>
+		<IR id="34" name="test/conv2/conv2_2/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pool5/MaxPool" out_port_id="0"/>
+		<IR id="98" name="test/pool5/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_fc7/BiasAdd" out_port_id="0"/>
+		<IR id="112" name="test/pixel_cls/score_from_fc7/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/add_2" out_port_id="0"/>
+		<IR id="123" name="test/pixel_cls/add_2/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_1/convolution" out_port_id="0"/>
+		<IR id="18" name="test/conv1/conv1_1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_fc7/BiasAdd" out_port_id="0"/>
+		<IR id="147" name="test/pixel_link/score_from_fc7/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv3_3/convolution" out_port_id="0"/>
+		<IR id="55" name="test/pixel_cls/score_from_conv3_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="pixel_link/score_from_fc7/weights/read" out_port_id="0"/>
+		<IR id="144" name="pixel_link/score_from_fc7/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_1/convolution" out_port_id="0"/>
+		<IR id="80" name="test/conv5/conv5_1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/ExpandDims/dim" out_port_id="0"/>
+		<IR id="3" name="test/ssd_preprocessing_train/resize_image/ExpandDims/dim/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_2/convolution" out_port_id="0"/>
+		<IR id="23" name="test/conv1/conv1_2/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/Reshape_4/shape" out_port_id="0"/>
+		<IR id="159" name="test/Reshape_4/Cast_15016_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_1/convolution" out_port_id="0"/>
+		<IR id="29" name="test/conv2/conv2_1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_1/convolution" out_port_id="0"/>
+		<IR id="60" name="test/conv4/conv4_1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_2/Relu" out_port_id="0"/>
+		<IR id="68" name="test/conv4/conv4_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/ResizeBilinear" out_port_id="0"/>
+		<IR id="149" name="test/pixel_link/ResizeBilinear" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="pixel_link/score_from_conv3_3/weights/read" out_port_id="0"/>
+		<IR id="132" name="pixel_link/score_from_conv3_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_2/BiasAdd" out_port_id="0"/>
+		<IR id="47" name="test/conv3/conv3_2/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_3/convolution" out_port_id="0"/>
+		<IR id="70" name="test/conv4/conv4_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/Softmax_1" out_port_id="0"/>
+		<IR id="163" name="test/Softmax_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/concat_1" out_port_id="0"/>
+		<IR id="161" name="test/Reshape_5/Cast_15018_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv3_3/convolution" out_port_id="0"/>
+		<IR id="133" name="test/pixel_link/score_from_conv3_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/add_2" out_port_id="0"/>
+		<IR id="158" name="test/pixel_link/add_2/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_1/BiasAdd" out_port_id="0"/>
+		<IR id="20" name="test/conv1/conv1_1/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fc6/weights/read" out_port_id="0"/>
+		<IR id="99" name="fc6/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_1/Relu" out_port_id="0"/>
+		<IR id="83" name="test/conv5/conv5_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_1/Relu" out_port_id="0"/>
+		<IR id="63" name="test/conv4/conv4_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="pixel_link/score_from_conv4_3/weights/read" out_port_id="0"/>
+		<IR id="136" name="pixel_link/score_from_conv4_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/Reshape_1" out_port_id="0"/>
+		<IR id="130" name="test/Reshape_1/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_2/Relu" out_port_id="0"/>
+		<IR id="88" name="test/conv5/conv5_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/Shape" out_port_id="0"/>
+		<IR id="127" name="test/Reshape_1/Cast_15028_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pool4/MaxPool" out_port_id="0"/>
+		<IR id="78" name="test/pool4/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_2/convolution" out_port_id="0"/>
+		<IR id="85" name="test/conv5/conv5_2/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv1/conv1_1/Relu" out_port_id="0"/>
+		<IR id="21" name="test/conv1/conv1_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_3/Relu" out_port_id="0"/>
+		<IR id="73" name="test/conv4/conv4_3/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="pixel_link/score_from_conv5_3/weights/read" out_port_id="0"/>
+		<IR id="140" name="pixel_link/score_from_conv5_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_3/convolution" out_port_id="0"/>
+		<IR id="50" name="test/conv3/conv3_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1/conv1_1/weights/read" out_port_id="0"/>
+		<IR id="17" name="conv1/conv1_1/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/concat" out_port_id="0"/>
+		<IR id="124" name="test/Reshape/Cast_15022_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="pixel_cls/score_from_conv4_3/weights/read" out_port_id="0"/>
+		<IR id="74" name="pixel_cls/score_from_conv4_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3/conv3_3/weights/read" out_port_id="0"/>
+		<IR id="49" name="conv3/conv3_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/sub" out_port_id="0"/>
+		<IR id="2" name="test/ssd_preprocessing_train/sub/add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_3/Relu" out_port_id="0"/>
+		<IR id="93" name="test/conv5/conv5_3/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/ExpandDims" out_port_id="0"/>
+		<IR id="16" name="test/ExpandDims/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/add" out_port_id="0"/>
+		<IR id="150" name="test/pixel_link/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/strided_slice_2" out_port_id="0"/>
+		<IR id="154" name="test/pixel_link/ResizeBilinear_2/Cast_15030_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_1/Relu" out_port_id="0"/>
+		<IR id="32" name="test/conv2/conv2_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/ExpandDims" out_port_id="0"/>
+		<IR id="6" name="test/ssd_preprocessing_train/resize_image/ExpandDims/Transpose" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/ExpandDims/dim" out_port_id="0"/>
+		<IR id="13" name="test/ExpandDims/dim/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/add" out_port_id="0"/>
+		<IR id="115" name="test/pixel_cls/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_2/BiasAdd" out_port_id="0"/>
+		<IR id="36" name="test/conv2/conv2_2/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/Shape_3" out_port_id="0"/>
+		<IR id="164" name="test/Reshape_6/Cast_14998_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5/conv5_3/weights/read" out_port_id="0"/>
+		<IR id="89" name="conv5/conv5_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv3_3/BiasAdd" out_port_id="0"/>
+		<IR id="135" name="test/pixel_link/score_from_conv3_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_fc7/convolution" out_port_id="0"/>
+		<IR id="145" name="test/pixel_link/score_from_fc7/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pool3/MaxPool" out_port_id="0"/>
+		<IR id="58" name="test/pool3/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4/conv4_1/weights/read" out_port_id="0"/>
+		<IR id="59" name="conv4/conv4_1/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_2/BiasAdd" out_port_id="0"/>
+		<IR id="87" name="test/conv5/conv5_2/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv4_3/BiasAdd" out_port_id="0"/>
+		<IR id="77" name="test/pixel_cls/score_from_conv4_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/ResizeBilinear" out_port_id="0"/>
+		<IR id="114" name="test/pixel_cls/ResizeBilinear" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/ssd_preprocessing_train/resize_image/stack" out_port_id="0"/>
+		<IR id="11" name="test/ssd_preprocessing_train/resize_image/Reshape/Cast_15020_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/ResizeBilinear_2" out_port_id="0"/>
+		<IR id="155" name="test/pixel_link/ResizeBilinear_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_3/BiasAdd" out_port_id="0"/>
+		<IR id="52" name="test/conv3/conv3_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_2/Relu" out_port_id="0"/>
+		<IR id="37" name="test/conv2/conv2_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/ResizeBilinear_2" out_port_id="0"/>
+		<IR id="120" name="test/pixel_cls/ResizeBilinear_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/fc7/convolution" out_port_id="0"/>
+		<IR id="105" name="test/fc7/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv3/conv3_2/weights/read" out_port_id="0"/>
+		<IR id="44" name="conv3/conv3_2/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4/conv4_3/weights/read" out_port_id="0"/>
+		<IR id="69" name="conv4/conv4_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_1/convolution" out_port_id="0"/>
+		<IR id="40" name="test/conv3/conv3_1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_3/Relu" out_port_id="0"/>
+		<IR id="53" name="test/conv3/conv3_3/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2/conv2_2/weights/read" out_port_id="0"/>
+		<IR id="33" name="conv2/conv2_2/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_1/BiasAdd" out_port_id="0"/>
+		<IR id="82" name="test/conv5/conv5_1/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv4_3/convolution" out_port_id="0"/>
+		<IR id="137" name="test/pixel_link/score_from_conv4_3/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/strided_slice_2" out_port_id="0"/>
+		<IR id="119" name="test/pixel_cls/ResizeBilinear_2/Cast_15002_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/ResizeBilinear_1" out_port_id="0"/>
+		<IR id="117" name="test/pixel_cls/ResizeBilinear_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_1/Relu" out_port_id="0"/>
+		<IR id="43" name="test/conv3/conv3_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/fc6/BiasAdd" out_port_id="0"/>
+		<IR id="102" name="test/fc6/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_2/convolution" out_port_id="0"/>
+		<IR id="45" name="test/conv3/conv3_2/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv3/conv3_1/BiasAdd" out_port_id="0"/>
+		<IR id="42" name="test/conv3/conv3_1/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv5/conv5_3/BiasAdd" out_port_id="0"/>
+		<IR id="92" name="test/conv5/conv5_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/Softmax" out_port_id="0"/>
+		<IR id="126" name="test/Softmax" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/fc7/BiasAdd" out_port_id="0"/>
+		<IR id="107" name="test/fc7/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="pixel_cls/score_from_conv3_3/weights/read" out_port_id="0"/>
+		<IR id="54" name="pixel_cls/score_from_conv3_3/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/Reshape_4" out_port_id="0"/>
+		<IR id="160" name="test/Reshape_4" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/score_from_conv5_3/BiasAdd" out_port_id="0"/>
+		<IR id="97" name="test/pixel_cls/score_from_conv5_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/strided_slice" out_port_id="0"/>
+		<IR id="148" name="test/pixel_link/ResizeBilinear/Cast_14996_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/Reshape" out_port_id="0"/>
+		<IR id="125" name="test/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/add_1" out_port_id="0"/>
+		<IR id="153" name="test/pixel_link/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5/conv5_1/weights/read" out_port_id="0"/>
+		<IR id="79" name="conv5/conv5_1/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/conv2/conv2_1/BiasAdd" out_port_id="0"/>
+		<IR id="31" name="test/conv2/conv2_1/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/conv4/conv4_3/BiasAdd" out_port_id="0"/>
+		<IR id="72" name="test/conv4/conv4_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="test/pixel_link/score_from_conv4_3/BiasAdd" out_port_id="0"/>
+		<IR id="139" name="test/pixel_link/score_from_conv4_3/BiasAdd/Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2/conv2_1/weights/read" out_port_id="0"/>
+		<IR id="28" name="conv2/conv2_1/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5/conv5_2/weights/read" out_port_id="0"/>
+		<IR id="84" name="conv5/conv5_2/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv1/conv1_2/weights/read" out_port_id="0"/>
+		<IR id="22" name="conv1/conv1_2/weights/read/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/pixel_cls/strided_slice" out_port_id="0"/>
+		<IR id="113" name="test/pixel_cls/ResizeBilinear/Cast_15004_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="test/fc7/Relu" out_port_id="0"/>
+		<IR id="108" name="test/fc7/Relu" out_port_id="1"/>
+	</map>
+</mapping>
